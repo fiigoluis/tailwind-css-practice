@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body class="bg-zinc-100">
+  <header class="absolute inset-x-0 top-0 z-50 bg-white outline-1 outline-gray-400 py-2">
+    <nav aria-label="Global" class="flex items-center justify-between px-6 py-0 lg:px-8">
+      <div class="flex lg:flex-1">
+        <a href="#" class="-m-1.5 p-1.5">
+          <span class="sr-only">Your Company</span>
+          <img src="./logo.png" class="h-6 w-auto">
+        </a>
+      </div>
+      <div class="flex lg:hidden">
+        <button type="button" command="show-modal" commandfor="mobile-menu" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-blue-600">
+          <span class="sr-only">Open main menu</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
+            <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+      </div>
+      <div class="hidden lg:flex px-4 justify-between items-center h-16">
+        <div class="hidden lg:flex lg:gap-x-4 space-x-1">
+                        <a href="#" class="text-gray-700 hover:text-blue-600 px-4 py-3 text-base">Features</a>
+                        <a href="#" class="text-gray-700 hover:text-blue-600 px-4 py-3 text-base">How it works</a>
+                        <a href="#" class="text-gray-700 hover:text-blue-600 px-4 py-3 text-base">Get the App</a>
+        </div>
+        <button class=" px-1.5 py-1.5 text-gray-700 text-base bg-slate-50 outline-1 sm:px-8 sm:py-3 shadow-2xl hover:text-slate-100 hover:bg-blue-400">Book a Call</button>
+      </div>
+    </nav>
+    <el-dialog>
+      <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden">
+        <div tabindex="0" class="fixed inset-0 focus:outline-none">
+          <el-dialog-panel class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+            <div class="flex items-center justify-between">
+              <a href="#" class="-m-1.5 p-1.5">
+                <span class="sr-only">Your Company</span>
+                <img src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600" alt="" class="h-8 w-auto" />
+              </a>
+              <button type="button" command="close" commandfor="mobile-menu" class="-m-2.5 rounded-md p-2.5 text-blue-600">
+                <span class="sr-only">Close menu</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
+                  <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+            </div>
+            <div class="mt-6 flow-root justify-between h-screen">
+                <div class="space-y-2 py-6">
+                  <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Features</a>
+                  <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">How it works</a>
+                  <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Get the App</a>
+                </div>
+                <div class="px-5 py-1.5 text-gray-700 text-center text-base bg-slate-50 outline-1 sm:px-8 sm:py-3 shadow-2xl hover:text-slate-100 hover:bg-blue-400">
+                  <a href="#">Book a Call</a>
+                </div>
+            </div>
+          </el-dialog-panel>
+        </div>
+      </dialog>
+    </el-dialog>
+  </header>
+
+
+<main class="flex-col items-center justify-center bg-zinc-100">
+
+  <!--Hero Section-->
+  <section class="flex justify-items-start  px-6 pt-8 lg:px-8 bg-linear-to-t from-sky-0 to to-sky-50">
+    
+    <div class="flex flex-col py-32 sm:py-8 lg:py-24">
+
+      <div class="mx-auto max-w-8xl"> <!--Top content Phones-->
+        
+        <div class="m-4 flex justify-center">
+            <img src="./Company-logo.png">
+        </div>
+        <div class="text-center max-w-5xl">
+          <h1 class="text-5xl font-medium text-balance text-gray-900 sm:text-7xl">Power your team's productivity, from planning to progress</h1>
+          <p class="mt-8 text-lg font-normal text-pretty text-gray-500 sm:text-xl/8">Your all in one workspace for managing tasks, schedules, and team communication.</p>
+          <div class="mt-10 flex flex-col items-center justify-center gap-y-6">
+            <a href="#" class="bg-gray-50 px-3 py-2.5 text-sm font-semibold text-gray-900 shadow-2xl outline-1 sm:py-3 hover:text-slate-100 hover:bg-blue-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Book a Setup Call</a>
+            <a href="#" class="flex gap-x-3 text-sm/6 font-semibold text-gray-500 items-center"><img src="./crediticon.png" class="w-auto h-4"> credit card required</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!--Mobile Phones-->
+      <div class="flex items-center justify-between mt-8 max-h-full">
+        <div class="grow"><img src="./4.png"></div>
+        <div class="grow"><img src="./2.png"></div>
+        <div class="grow"><img src="./1.png"></div>
+        <div class="grow"><img src="./3.png"></div>
+        <div class="grow"><img src="./5.png"></div>
+      </div>
+    </div>
+  </section>
+
+  <!--Features Section-->
+
+  <section class="px-6 pt-8 lg:mx-24 my-24">
+
+    <div class="flex-col">
+      <div class="flex items-end justify-between mb-16">
+        <div class="text-slate-600 font-normal text-base text-balance max-w-5xl"> <!--Left-->
+          <h2 class="font-normal text-3xl mb-4 text-slate-800">Everything Your Team Needs to Get Work Done</h2>
+          From planning to delivery, ManageMate equips your team with the essential tools to stay productive, organized, and in sync—no extra apps needed.
+        </div>
+
+        <div class="flex gap-4"> <!--Right-->
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="flex p-2 size-12 bg-slate-100 outline-1 outline-slate-200">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
+          </svg>
+
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="flex p-2 size-12 bg-slate-100 outline-1 outline-slate-200">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+          </svg>
+        </div>   
+      </div>
+
+
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-6"> <!--Cards container-->
+
+
+        <div class="flex-col  pt-6 px-6 bg-amber-50 h-125 overflow-hidden"> <!--Card-->
+          <div class="text-slate-600 font-normal text-sm text-balance mb-16"> <!--Card title-->
+            <h3 class="font-normal text-xl text-slate-800 mb-3">Task Manager</h3>
+            Easily manage and prioritize tasks so nothing slips through the cracks.
+          </div>
+
+          <div class="grow"> <!--card image-->
+            <img src="./Event Details.png">
+          </div>
+        </div>
+        <div class="flex-col pt-6 px-6 bg-sky-50 h-125 overflow-hidden"> <!--Card-->
+          <div class="text-slate-600 font-normal text-sm text-balance mb-16"> <!--Card title-->
+            <h3 class="font-normal text-xl text-slate-800 mb-3">Calendar View</h3>
+            See all your tasks and deadlines clearly in a single calendar layout.
+          </div>
+
+          <div class="grow"> <!--card image-->
+            <img src="./Calendar Tasks.png">
+          </div>
+        </div>
+
+                <div class="flex-col pt-6 px-6 bg-purple-100 h-125 overflow-hidden"> <!--Card-->
+          <div class="text-slate-600 font-normal text-sm text-balance mb-16"> <!--Card title-->
+            <h3 class="font-normal text-xl text-slate-800 mb-3">File Manager</h3>
+            Securely upload, manage, and share documents with your team.
+          </div>
+
+          <div class="grow"> <!--card image-->
+            <img src="./File Manager Grid View.png">
+          </div>
+        </div>
+
+                <div class="flex-col pt-6 px-6 bg-teal-50 h-125 overflow-hidden"> <!--Card-->
+          <div class="text-slate-600 font-normal text-sm text-balance mb-16"> <!--Card title-->
+            <h3 class="font-normal text-xl text-slate-800 mb-3">Project Dashboard</h3>
+            Track progress, team activity, and overall project health at a glance.
+          </div>
+
+          <div class="grow"> <!--card image-->
+            <img src="./Projects Directory Projects.png">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  
+</main>
+</body>
+</html>
